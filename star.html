@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>STAR솔루션</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+
+ <!-- Header with Dropdown Menu -->
+<header class="py-4 px-6 flex justify-between items-center border-b border-gray-700 relative z-20">
+  <div class="text-2xl font-bold">STAR솔루션</div>
+
+  <!-- 햄버거 버튼 (모바일) -->
+  <button id="menu-toggle" class="text-white md:hidden focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+
+  <!-- 메인 메뉴 -->
+  <nav id="menu" class="hidden md:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-black md:bg-transparent md:space-x-6 text-center z-10 border-t md:border-0 border-gray-700 transition-all duration-300 ease-in-out">
+    <a href="#features" class="block px-4 py-2 hover:bg-gray-800 md:hover:bg-transparent">특징</a>
+
+    <!-- 드롭다운 메뉴 시작 -->
+    <div class="relative group">
+  <button class="block px-4 py-2 w-full hover:bg-gray-800 md:hover:bg-transparent focus:outline-none">서비스 ▾</button>
+  <div class="hidden group-hover:block absolute md:top-full md:left-0 bg-gray-800 text-left rounded shadow-lg py-2 w-40 transition-all duration-300 ease-in-out">
+    <a href="#services" class="block px-4 py-2 hover:bg-gray-800">카지노 API</a>
+    <a href="#services" class="block px-4 py-2 hover:bg-gray-800">가상계좌</a>
+  </div>
+</div>
+    <!-- 드롭다운 메뉴 끝 -->
+
+    <a href="#faq" class="block px-4 py-2 hover:bg-gray-800 md:hover:bg-transparent">Q&A</a>
+    <a href="#contact" class="block px-4 py-2 hover:bg-gray-800 md:hover:bg-transparent">문의</a>
+  </nav>
+</header>
+
+  <!-- Hero -->
+  <section class="py-20 px-6 text-center">
+    <img src="https://i.imgur.com/5Or8TkR.png" alt="서비스 소개 이미지" class="mx-auto mb-8 w-full max-w-md rounded-lg shadow-lg" />
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">카지노 솔루션 통합 패키지</h1>
+    <p class="text-lg mb-8 text-gray-300">서버, 보안, API까지 원스톱으로!</p>
+     <!-- ✅ 이미지 삽입 -->
+  
+
+     <a href="#contact" class="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-300 transition">지금 문의하기</a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 px-6 border-t border-gray-700">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h2 class="text-xl font-semibold mb-2">안정 서버</h2>
+        <p class="text-gray-400">고성능 서버 환경과 장애 대응</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold mb-2">최신 보안</h2>
+        <p class="text-gray-400">SSL, 백업, 업데이트 지원</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold mb-2">심리스 API</h2>
+        <p class="text-gray-400">정품 API & 가상계좌 지원</p>
+      </div>
+    </div>
+  </section>
+<!-- Provider Comparison Section -->
+<section class="py-16 px-6 border-t border-gray-700 bg-black text-white text-center">
+  <h2 class="text-3xl font-bold mb-12">제공 솔루션 비교</h2>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-left">
+    
+    <!-- 씨맥스 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-2xl font-bold mb-2">씨맥스</h3>
+      <ul class="text-gray-300 space-y-2">
+        <li>✔ 트랜스퍼 방식</li>
+        <li>✔ 카지노 & 슬롯</li>
+        <li>✔ 정품 통합</li>
+        <li class="mt-2 italic text-sm text-gray-400">(제공 게임사 및 수수료 문의)</li>
+      </ul>
+    </div>
+    
+    <!-- 스윅스 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-2xl font-bold mb-2">스윅스</h3>
+      <ul class="text-gray-300 space-y-2">
+        <li>✔ 심리스 방식</li>
+        <li>✔ 카지노 & 슬롯</li>
+        <li>✔ 정품 통합</li>
+        <li class="mt-2 italic text-sm text-gray-400">(제공 게임사 및 수수료 문의)</li>
+      </ul>
+    </div>
+
+    <!-- 아너링크 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-2xl font-bold mb-2">아너링크</h3>
+      <ul class="text-gray-300 space-y-2">
+        <li>✔ 심리스, 트랜스퍼 제공</li>
+        <li>✔ 카지노 & 슬롯</li>
+        <li>✔ 국내 점유율 1위</li>
+        <li>✔ 정품 통합</li>
+        <li class="mt-2 italic text-sm text-gray-400">(제공 게임사 및 수수료 문의)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 px-6 border-t border-gray-700">
+    <div class="max-w-3xl mx-auto space-y-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-2">카지노 API & 정품알</h3>
+        <p class="text-gray-300">정식 계약된 정품 API로 안정적인 라이브 영상 지원 </p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold mb-2">가상계좌 시스템</h3>
+        <p class="text-gray-300">1원 인증, 고정계좌, 최저 수수료 지원 </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 통합 솔루션 소개 Section -->
+<section class="py-16 px-6 border-t border-gray-700 bg-black text-white text-center">
+  <h2 class="text-3xl font-bold mb-12">통합 솔루션 제공</h2>
+  <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-left">
+    
+    <!-- 스포츠/미니게임/카지노/슬롯 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-bold mb-2">스포츠 · 미니게임 · 카지노 · 슬롯</h3>
+      <p class="text-gray-300">모든 장르를 하나로 통합한 올인원 솔루션. 정산, API 연동까지 완벽 지원.</p>
+    </div>
+
+    <!-- 카지노 & 슬롯 솔루션 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-bold mb-2">카지노 & 슬롯 솔루션</h3>
+      <p class="text-gray-300">국내외 정품 API 기반 카지노/슬롯 시스템. 실시간 중계 + 이벤트 연동 제공.</p>
+    </div>
+     <!-- 홀덤 솔루션 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow">
+      <h3 class="text-xl font-bold mb-2">와일드 홀덤 솔루션</h3>
+      <p class="text-gray-300">모바일 데스크탑 API 기반. 업계 동접률1위  + 편리한 UI/UX 어드민페이지 제공.</p>
+    </div>
+    </section>
+
+  <!-- FAQ Q&A -->
+  <section id="faq" class="py-16 px-6 border-t border-gray-700">
+    <h2 class="text-3xl font-bold text-center mb-8">자주 묻는 질문</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div>
+        <h4 class="font-semibold">Q: 제작 기간은?</h4>
+        <p class="text-gray-300">최소 3일 이내 제작 완료 </p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Q: 수정,관리 가능한가요?</h4>
+        <p class="text-gray-300">원하는 커스터마이징 수정가능 + 사후 관리 포함 </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 px-6 border-t border-gray-700 text-center">
+    <h2 class="text-3xl font-bold mb-12">성공 후기</h2>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg shadow">
+        <p class="italic text-gray-300">"4일만에 런칭했습니다. 믿기 어려운 속도!"</p>
+        <div class="mt-4 font-semibold">– 운영자 A</div>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow">
+        <p class="italic text-gray-300">"API가 안정적이고 오류 없어서 만족합니다."</p>
+        <div class="mt-4 font-semibold">– 운영자 B</div>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow">
+        <p class="italic text-gray-300">"보안, 서버, API 모두 한 번에 해결됐어요."</p>
+        <div class="mt-4 font-semibold">– 운영자 C</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Contact -->
+  <section id="contact" class="py-16 px-6 text-center border-t border-gray-700">
+    <h2 class="text-3xl font-bold mb-4">지금 바로 상담하세요</h2>
+    <p class="mb-6 text-gray-300">텔레그램으로 24시간 문의 가능</p>
+    <a href="https://t.me/ssol112" target="_blank" class="bg-white text-black px-6 py-3 rounded hover:bg-gray-300 transition">
+      텔레그램 상담하기
+    </a>
+  </section>
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-sm text-gray-500 border-t border-gray-700">
+    &copy; 2025 STAR솔루션. All rights reserved.
+  </footer>
+
+</body>
+</html>
